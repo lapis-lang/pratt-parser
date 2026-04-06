@@ -1,0 +1,47 @@
+{
+  "name": "@lapis-lang/pratt-parser",
+  "version": "0.1.0",
+  "description": "A Pratt parser library",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "node --experimental-strip-types --test 'src/**/*.test.ts'",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "pratt",
+    "parser",
+    "top-down",
+    "operator-precedence"
+  ],
+  "author": {
+    "name": "Michael Haufe",
+    "email": "tno@thenewobjective.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapis-lang/pratt-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lapis-lang/pratt-parser/issues"
+  },
+  "homepage": "https://github.com/lapis-lang/pratt-parser#readme",
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "typescript": "^5.8.3"
+  }
+}
