@@ -12,6 +12,18 @@ direct interpreter or an AST node type for a compiler front-end.
 npm install @lapis-lang/pratt-parser
 ```
 
+**Directly from GitHub** (latest):
+
+```sh
+npm install github:lapis-lang/pratt-parser
+```
+
+**Pinned to a release tag:**
+
+```sh
+npm install github:lapis-lang/pratt-parser#v0.1.0
+```
+
 ## Usage
 
 ```ts
